@@ -58,7 +58,7 @@
     {
         "id": "2",
         "title": "Grottmannen Dug",
-        "year": "2018",
+        "year": "2005",
         "genres": [
             "Animation",
             "Adventure",
@@ -317,7 +317,7 @@
             1,
             4
         ],
-        "poster": "MV5BMTg5NjUyMzAyOV5BMl5BanBnXkFtZTgwMTU4Njk2NDM@._V1_SY500_CR0,0,337,500_AL_.jpg",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/a/af/Star_Wars_The_Rise_of_Skywalker_poster.jpg",
         "contentRating": "",
         "duration": "PT107M",
         "releaseDate": "2017-05-26",
@@ -330,7 +330,7 @@
             "Jacqueline Bisset"
         ],
         "imdbRating": 6.2,
-        "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg5NjUyMzAyOV5BMl5BanBnXkFtZTgwMTU4Njk2NDM@._V1_SY500_CR0,0,337,500_AL_.jpg"
+        "posterurl": "https://upload.wikimedia.org/wikipedia/en/a/af/Star_Wars_The_Rise_of_Skywalker_poster.jpg"
     },
     {
         "id": "7",
@@ -775,7 +775,7 @@
     },
     {
         "id": "15",
-        "title": "Fifty Shades Freed",
+        "title": "The Predator",
         "year": "2018",
         "genres": [
             "Drama",
@@ -827,7 +827,7 @@
             "Eric Johnson"
         ],
         "imdbRating": 4.2,
-        "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYxOTQ1MzI0Nl5BMl5BanBnXkFtZTgwMzgwMzIxNDM@._V1_SY500_CR0,0,315,500_AL_.jpg"
+        "posterurl": "https://upload.wikimedia.org/wikipedia/en/9/97/The_Predator_official_poster.jpg"
     },
     {
         "id": "16",
