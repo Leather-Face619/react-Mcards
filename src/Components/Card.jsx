@@ -3,23 +3,16 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Box, Button, CardActionArea, CardActions } from '@mui/material';
+import { Box, CardActionArea, CardActions } from '@mui/material';
 import mov from "../mov.json"
+import LearnBtn,{DownBtn} from './BtnHandler';
 
 export default function MultiActionAreaCard() {
-
   return (
-    mov.map((movie) => {
-      const handleDownload = () => {
-        const link = document.createElement('a');
-        link.href = 'path/to/your/video.mp4';
-        link.download = `${movie.title}.mp4`;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      };
+    mov.map((movie,i) => {
+     
       return (
-        <Box sx={{ display: ' inline-block', gap: "30px", margin: '10px', verticalAlign: 'top' }}>
+        <Box key={i} sx={{ display: ' inline-block', gap: "30px", margin: '10px', verticalAlign: 'top' }}>
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
               <CardMedia
@@ -33,17 +26,22 @@ export default function MultiActionAreaCard() {
                 </Typography>
                 <b style={{ position: 'absolute', right: '10px' }}>{movie.year}</b>
                 <Typography>
-                  <h5>imdb Rating: <b>{movie.imdbRating}</b></h5>
+                  <h5>
+                    IMDb Rating:  
+                    <b style={{marginLeft:'5px', borderRadius:'20px',padding:'.2vw 1vw ',backgroundColor: movie.imdbRating > 5 ?  'green' : '#a11414'}}>
+                      {movie.imdbRating}
+                    </b>
+                  </h5>
+
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.secondary" >
                   {movie.storyline}
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions>
-              <Button size="mediun" onClick={handleDownload} color="primary">
-                Download
-              </Button>
+            <CardActions style={{position:'relative'}}>
+              <DownBtn mov={movie}/>
+              <LearnBtn mov={movie}/>
             </CardActions>
           </Card>
         </Box>

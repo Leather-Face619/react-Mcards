@@ -6,17 +6,19 @@ import styled from 'styled-components';
 const Button = styled.div` 
 position: fixed; 
 width: 100%; 
-left: 50%; 
+
+left: 90%; 
 bottom: 40px; 
 height: 20px; 
 font-size: 3rem; 
 z-index: 1; 
 cursor: pointer; 
-color: green; 
+color: #0053ef; 
 :hover {
-    filter: brightness(0.75);
+    filter: brightness(0.85);
     transition: filter 0.3s ease-in-out;
   }
+
 `
 
 
@@ -46,10 +48,10 @@ const scrollToTop = () =>{
 window.addEventListener('scroll', toggleVisible); 
 
 return ( 
-	<Button> 
+	<Button>
 	<FaArrowCircleUp onClick={scrollToTop} 
 	style={{display: visible ? 'inline' : 'none'}} /> 
-	</Button> 
+	</Button>
 ); 
 } 
 
